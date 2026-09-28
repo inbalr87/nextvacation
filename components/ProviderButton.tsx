@@ -1,0 +1,4 @@
+'use client';
+import {useState} from 'react';
+import {ExternalLink,X} from 'lucide-react';
+export function ProviderButton({provider='הספק'}:{provider?:string}){const [open,setOpen]=useState(false);return <><button className="offer-button" onClick={()=>setOpen(true)}>לצפייה בהצעה <ExternalLink size={14}/></button>{open&&<div className="modal-backdrop" onClick={()=>setOpen(false)}><div className="demo-modal" onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={()=>setOpen(false)}><X size={18}/></button><div className="modal-icon"><ExternalLink/></div><h3>כאן תתבצע ההפניה לספק</h3><p>בגרסה החיה הכפתור יעביר לאתר {provider} באמצעות Deep Link / Affiliate Link, ושם המשתמש ישלים את ההזמנה והתשלום.</p><div className="demo-pill">אין הזמנה או סליקה בתוך NextVacation</div><button className="modal-primary" onClick={()=>setOpen(false)}>הבנתי</button></div></div>}</>}

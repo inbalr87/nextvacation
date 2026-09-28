@@ -1,0 +1,3 @@
+import {ContactForm} from '@/components/ContactForm';import {Mail,Handshake,PlugZap} from 'lucide-react';
+export const metadata={title:'צור קשר'};
+export default function Page(){return <main className="info-page"><div className="wrap"><article className="info-card wide"><div className="eyebrow">דברו איתנו</div><h1>צור קשר</h1><p className="lead">שאלה על האתר, הצעה לשיתוף פעולה או ספק שמעוניין להתחבר למנוע החיפוש? נשמח לשמוע.</p><div className="contact-reasons"><div><Mail/><strong>שאלות כלליות</strong><span>על NextVacation ואופן הפעולה.</span></div><div><Handshake/><strong>שיתופי פעולה</strong><span>Affiliate, תוכן ומסחר.</span></div><div><PlugZap/><strong>ספקי API</strong><span>טיסות, מלונות וחבילות.</span></div></div><ContactForm/></article></div></main>}

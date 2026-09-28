@@ -1,0 +1,5 @@
+import {SearchBox} from '@/components/SearchBox';import {FlightResultsClient} from '@/components/FlightResultsClient';
+type SP=Promise<{[key:string]:string|string[]|undefined}>;
+const get=(q:Awaited<SP>,k:string,d:string)=>typeof q[k]==='string'?q[k] as string:d;
+export const metadata={title:'תוצאות טיסות'};
+export default async function Page({searchParams}:{searchParams:SP}){const q=await searchParams;const from=get(q,'from','תל אביב (TLV)'),to=get(q,'to','בודפשט (BUD)'),depart=get(q,'depart',''),ret=get(q,'ret',''),adults=get(q,'adults','1');return <main><section className="results-search-wrap"><div className="wrap"><SearchBox mode="flights" compact/></div></section><section className="results-heading"><div className="wrap"><div><div className="eyebrow">תוצאות חיפוש</div><h1>{from} <span>←</span> {to}</h1><p>{depart}{ret?` עד ${ret}`:''} · {adults} {adults==='1'?'נוסע':'נוסעים'}</p></div></div></section><section className="section compact"><div className="wrap"><FlightResultsClient from={from} to={to}/></div></section></main>}
