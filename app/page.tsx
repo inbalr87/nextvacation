@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import {SearchBox} from '@/components/SearchBox';
-import {Search,ArrowUpRight,ShieldCheck,Plane,Hotel,PackageOpen,Sparkles} from 'lucide-react';
+import {Search,ArrowUpRight,ShieldCheck,Plane,Hotel,PackageOpen} from 'lucide-react';
 
 const inspiration=[
   {title:'טיסות',subtitle:'למצוא את הדרך הכי נוחה ליעד',image:'/assets/icon-flights.webp',href:'/flights'},
@@ -26,18 +26,32 @@ const destinationCards=[
 
 export default function Home(){
   return <main>
-    <section className="hero brand-hero">
-      <div className="wrap hero-grid">
-        <div className="hero-copy">
-          <div className="hero-badge"><Sparkles size={15}/>החופשה שלכם, בלי לפתוח עשרים טאבים</div>
-          <h1>מחפשים פעם אחת.<br/><span>בוחרים חכם.</span></h1>
-          <p>טיסות, מלונות וטיסה + מלון במקום אחד. משווים בין האפשרויות וממשיכים ישירות לספק כדי להשלים את ההזמנה.</p>
-          <div className="hero-trust"><span><ShieldCheck size={17}/>בלי תשלום באתר</span><span><ArrowUpRight size={17}/>מעבר ישיר לספק</span></div>
+    <section className="brand-hero">
+      <div className="wrap brand-hero-grid">
+        <div className="brand-hero-copy">
+          <div className="brand-kicker"><span/>NEXTVACATION.CO.IL<span/></div>
+          <h1>טיסות • מלונות • חבילות<br/><em>בסטייל של חופשה</em></h1>
+          <p>
+            מנוע חיפוש נוח, דילים נבחרים ושפה ויזואלית רכה,
+            בוטיקית ומעוררת השראה – כדי שהחיפוש ירגיש
+            כמו התחלה של חופשה, לא כמו עוד מטלה.
+          </p>
+          <div className="brand-bullets">
+            <span>חיפוש פשוט וברור</span>
+            <span>דילים שנבחרים בקפידה</span>
+            <span>אפשרות לעבור לעזרה אישית</span>
+          </div>
         </div>
-        <div className="hero-visual brand-visual">
-          <div className="hero-photo"><img src="/assets/hero-amalfi.webp" alt="חופשה בחוף אמאלפי"/></div>
-          <div className="hero-stamp">NEXT<br/>VACATION</div>
-          <div className="hero-mini-card"><span>רק מחפשים ומשווים</span><strong>את ההזמנה עושים אצל הספק</strong></div>
+
+        <div className="brand-hero-visual">
+          <div className="brand-hero-photo">
+            <img src="/assets/street.webp" alt="חופשה ים־תיכונית צבעונית מול הים"/>
+          </div>
+          <div className="brand-mini-deals">
+            <div><small>חופשה עירונית</small><strong>פריז · 4 לילות</strong></div>
+            <div><small>אי יווני</small><strong>סנטוריני · 5 לילות</strong></div>
+            <div><small>דיל נבחר</small><strong>טיסה + מלון</strong></div>
+          </div>
         </div>
       </div>
     </section>
@@ -46,7 +60,7 @@ export default function Home(){
 
     <section className="section brand-choice-section">
       <div className="wrap">
-        <div className="section-head centered-head"><div><div className="eyebrow">מתחילים מהחופשה שמתאימה לכם</div><h2>מה מחפשים עכשיו?</h2><p>אותה שפה ויזואלית שסגרנו — עכשיו גם בתוך האתר עצמו.</p></div></div>
+        <div className="section-head centered-head"><div><div className="eyebrow">מתחילים מהחופשה שמתאימה לכם</div><h2>מה מחפשים עכשיו?</h2><p>חיפוש פשוט, נעים וברור – בלי להעמיס.</p></div></div>
         <div className="brand-icon-grid">
           {inspiration.map(item=><Link key={item.title} className="brand-icon-card" href={item.href}><img src={item.image} alt=""/><strong>{item.title}</strong><span>{item.subtitle}</span><b>לפתיחה ←</b></Link>)}
         </div>
