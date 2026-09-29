@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import {Menu,X,Plane,Hotel,PackageOpen,Info,Mail} from 'lucide-react';
+import {Menu,X,Plane,Hotel,PackageOpen,Info,Mail,Tags} from 'lucide-react';
 import {useState,useEffect} from 'react';
 import {usePathname} from 'next/navigation';
 
@@ -20,13 +20,12 @@ export function Header(){
     <header className="site-header">
       <div className="wrap header-row">
         <Link className="logo" href="/" aria-label="החופשה הבאה"><img src={logo} alt="החופשה הבאה"/></Link>
-
         <nav className="desktop-nav" aria-label="ניווט ראשי">
           <Link className={path.startsWith('/flights')?'active':''} href="/flights">טיסות</Link>
           <Link className={path.startsWith('/hotels')?'active':''} href="/hotels">מלונות</Link>
           <Link className={path.startsWith('/packages')?'active':''} href="/packages">טיסה + מלון</Link>
+          <Link className={path.startsWith('/deals')?'active':''} href="/deals">דילים</Link>
         </nav>
-
         <button className="menu-button" onClick={()=>setOpen(true)} aria-label="פתיחת תפריט" aria-expanded={open}><Menu size={22}/></button>
       </div>
     </header>
@@ -40,6 +39,7 @@ export function Header(){
         <Link href="/flights"><Plane size={18}/><span>טיסות</span></Link>
         <Link href="/hotels"><Hotel size={18}/><span>מלונות</span></Link>
         <Link href="/packages"><PackageOpen size={18}/><span>טיסה + מלון</span></Link>
+        <Link href="/deals"><Tags size={18}/><span>דילים</span></Link>
         <Link href="/how-it-works"><Info size={18}/><span>איך זה עובד</span></Link>
         <Link href="/about"><Info size={18}/><span>אודות</span></Link>
         <Link href="/contact"><Mail size={18}/><span>צור קשר</span></Link>

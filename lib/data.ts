@@ -49,4 +49,6 @@ export const airports:Airport[] = [
   {city:'ניו יורק',country:'ארה״ב',iata:'JFK',name:'John F. Kennedy International'},
   {city:'אורלנדו',country:'ארה״ב',iata:'MCO',name:'Orlando International'},
   {city:'לוס אנג׳לס',country:'ארה״ב',iata:'LAX',name:'Los Angeles International'},
+  {city:'טורונטו',country:'קנדה',iata:'YYZ',name:'Toronto Pearson International'},
+  {city:'פלמה דה מיורקה',country:'ספרד',iata:'PMI',name:'Palma de Mallorca Airport'},
 ];
