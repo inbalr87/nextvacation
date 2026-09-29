@@ -20,7 +20,6 @@ export default async function Page({searchParams}:{searchParams:SP}){
       title="טיסה + מלון"
       subtitle="מחפשים את שני חלקי החופשה באותו יעד, עם מחלקת טיסה, נוסעים וחדרים בחלונית אחת."
       image="/assets/street.webp"
-      eyebrow="FLIGHT + HOTEL"
     >
       <SearchBox mode="packages" initialTo={initialTo}/>
     </SearchLandingHero>

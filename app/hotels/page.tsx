@@ -18,7 +18,6 @@ export default function Page(){
       title="מלון שמתאים לחופשה"
       subtitle="בחרו יעד, תאריכים והרכב נוסעים — ונציג השוואה מסודרת לפי מיקום, דירוג ותנאים."
       image="/assets/santorini.webp"
-      eyebrow="HOTELS"
     >
       <SearchBox mode="hotels"/>
     </SearchLandingHero>
