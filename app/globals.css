@@ -451,3 +451,216 @@ body{font-size:17px}
 }
 .hotel-info h3{font-size:27px!important}.hotel-kicker{font-size:12px!important}.hotel-rating-line strong{font-size:13px!important}.hotel-rating-line small{font-size:12px!important}.hotel-meta{font-size:13px!important}.hotel-tags span{font-size:11px!important}.hotel-offer small,.hotel-offer>span{font-size:11px!important}.hotel-offer strong{font-size:32px!important}
 .value-card h3{font-size:25px!important}.value-card p{font-size:15px!important}.value-card .step{font-size:12px!important}
+
+/* =========================================================
+   NextVacation V6 – editorial travel journal direction
+   ========================================================= */
+
+/* Balanced global heading hierarchy: visible eyebrow, calmer main titles */
+.eyebrow{
+  display:inline-flex!important;
+  align-items:center!important;
+  min-height:32px!important;
+  padding:7px 13px!important;
+  margin-bottom:12px!important;
+  border-radius:999px!important;
+  background:#f3e3e0!important;
+  color:#b9687a!important;
+  font-size:14px!important;
+  line-height:1.2!important;
+  letter-spacing:0!important;
+  font-weight:700!important;
+}
+.section-head h2{
+  font-size:clamp(38px,3.5vw,48px)!important;
+  line-height:1.08!important;
+  letter-spacing:-1px!important;
+}
+.section-head p{
+  font-size:16px!important;
+  line-height:1.75!important;
+  max-width:780px!important;
+}
+.search-landing-copy>span,.deals-visual-copy>span,.discover-hero-copy>span,.discover-card>span,.package-style{
+  font-size:14px!important;
+  letter-spacing:0!important;
+  line-height:1.35!important;
+}
+.search-landing-copy h1,.discover-hero-copy h1,.deals-visual-copy h1{
+  font-size:clamp(42px,4vw,56px)!important;
+  line-height:1.08!important;
+}
+.brand-hero-copy h1{font-size:clamp(48px,5vw,68px)!important;line-height:1.06!important}
+
+/* Warm editorial paper feel inspired by the supplied references */
+body{
+  background:
+    radial-gradient(circle at 10% 15%,rgba(239,211,204,.16),transparent 24%),
+    radial-gradient(circle at 86% 44%,rgba(196,205,184,.10),transparent 28%),
+    var(--cream)!important;
+}
+.section{position:relative}
+.journal-tinted{background:rgba(247,239,233,.54)}
+.paper-tag{
+  display:inline-flex;
+  align-items:center;
+  padding:6px 10px;
+  border-radius:999px;
+  background:#f1e2df;
+  color:#a96170;
+  font-size:12px;
+  font-weight:700;
+  margin-bottom:14px;
+}
+
+/* New category icons: elegant coastal-boho, individual SVG files */
+.category-icon-grid .brand-icon-card{
+  background:rgba(255,255,255,.92)!important;
+  border-color:#e9dcd3!important;
+  box-shadow:0 12px 30px rgba(94,71,62,.06)!important;
+}
+.category-icon-grid .brand-icon-card img{
+  width:172px!important;
+  height:172px!important;
+  padding:0!important;
+  object-fit:contain!important;
+  background:transparent!important;
+  border-radius:50%!important;
+}
+.category-icon-grid .brand-icon-card strong{font-size:24px!important;margin-top:3px!important}
+.category-icon-grid .brand-icon-card span{font-size:14px!important;line-height:1.65!important;color:#7d8587!important}
+.category-icon-grid .brand-icon-card b{font-size:13px!important;color:#b9687a!important}
+
+/* Footer: no copy below logo; larger legal/footer bottom, menus stay restrained */
+.site-footer{padding:58px 0 34px!important;background:rgba(255,253,249,.72)!important}
+.footer-main{grid-template-columns:1fr 1.55fr!important;gap:70px!important;align-items:center!important}
+.footer-brand{display:flex!important;align-items:center!important;justify-content:flex-start!important;min-height:170px!important}
+.footer-logo{width:360px!important;max-width:100%!important}
+.footer-main>div:first-child p{display:none!important}
+.footer-columns strong{font-size:16px!important}
+.footer-columns a{font-size:14px!important;line-height:1.75!important}
+.footer-bottom{
+  margin-top:38px!important;
+  padding-top:22px!important;
+  font-size:15px!important;
+  line-height:1.7!important;
+  color:#6f7f87!important;
+}
+
+/* ---------------------------------------------------------
+   Barcelona / destination template – travel journal collage
+   --------------------------------------------------------- */
+.editorial-destination{overflow:hidden}
+.destination-journal-hero{padding:64px 0 26px;position:relative}
+.destination-journal-hero:before{
+  content:'';position:absolute;width:290px;height:290px;border-radius:50%;
+  background:rgba(241,218,213,.42);right:-80px;top:30px;filter:blur(.2px)
+}
+.destination-journal-grid{
+  display:grid;
+  grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
+  gap:72px;
+  align-items:center;
+  direction:ltr;
+}
+.destination-journal-copy{direction:rtl;grid-column:2;position:relative;z-index:2}
+.journal-kicker{
+  display:inline-block;
+  color:#a95d6b;
+  font-size:24px;
+  font-weight:600;
+  transform:rotate(-3deg);
+  margin-bottom:4px;
+  font-family:var(--font);
+}
+.destination-journal-copy h1{
+  margin:0;
+  color:var(--navy);
+  font-size:clamp(58px,7vw,92px);
+  line-height:.96;
+  letter-spacing:-2px;
+}
+.destination-journal-copy h2{
+  margin:17px 0 0;
+  color:#4f5b5e;
+  font-size:25px;
+  line-height:1.35;
+  font-weight:700;
+}
+.destination-journal-copy p{
+  margin:21px 0 0;
+  max-width:660px;
+  color:#737f82;
+  font-size:17px;
+  line-height:1.95;
+}
+.journal-mini-note{
+  display:inline-flex;align-items:center;gap:8px;margin-top:21px;
+  padding:10px 14px;border-radius:999px;background:#f5e6e4;color:#8f5b65;
+  font-size:13px;font-weight:700
+}
+.destination-collage{
+  grid-column:1;grid-row:1;position:relative;height:540px;direction:rtl;
+}
+.collage-main{
+  position:absolute;left:7%;top:7%;width:75%;height:76%;overflow:hidden;
+  border-radius:42px 12px 42px 12px;background:#eee;
+  box-shadow:0 24px 55px rgba(46,57,58,.16);transform:rotate(-1.2deg)
+}
+.collage-main img{width:100%;height:100%;object-fit:cover}
+.collage-polaroid{
+  position:absolute;background:#fff;padding:9px 9px 25px;box-shadow:0 13px 30px rgba(66,53,46,.16);z-index:3
+}
+.collage-polaroid img{width:100%;height:100%;object-fit:cover}
+.collage-polaroid span{position:absolute;right:10px;left:10px;bottom:6px;text-align:center;color:#826e62;font-size:11px;font-weight:700}
+.collage-one{width:190px;height:210px;right:3%;top:0;transform:rotate(4deg)}
+.collage-two{width:175px;height:205px;right:7%;bottom:3%;transform:rotate(-5deg)}
+.collage-wash{position:absolute;border-radius:55% 45% 50% 50%;z-index:-1}
+.collage-wash-one{width:240px;height:160px;background:#eed9d3;left:-4%;bottom:7%;transform:rotate(10deg)}
+.collage-wash-two{width:180px;height:120px;background:#dce2d5;right:10%;top:18%;transform:rotate(-8deg)}
+
+.destination-journal-summary{padding:8px 0 24px}
+.destination-summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}
+.destination-booking-card,.destination-fact-panel{
+  background:rgba(255,255,255,.9);border:1px solid #e8dbd2;border-radius:28px;padding:24px 26px;
+  box-shadow:0 12px 36px rgba(76,59,48,.06)
+}
+.destination-booking-card h3,.destination-fact-panel h3{font-size:22px;margin:0 0 14px;color:var(--navy)}
+.destination-booking-links{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.destination-booking-links a{
+  min-height:48px;display:flex;align-items:center;justify-content:center;gap:7px;
+  border:1px solid #eadfd7;border-radius:14px;font-weight:700;font-size:13px;background:#fff;color:var(--navy)
+}
+.destination-booking-links a.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.destination-fact-panel{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}
+.destination-fact-panel h3{grid-column:1/-1}
+.destination-fact-panel>div{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid #eee2da;padding-top:10px}
+.destination-fact-panel span{display:flex;align-items:center;gap:7px;color:#8b9495;font-size:13px}
+.destination-fact-panel strong{color:var(--navy);font-size:14px}
+.journal-section{padding-top:64px!important}
+.journal-card-grid article{position:relative;overflow:hidden;background:#fffdf9!important}
+.journal-card-grid article:after{content:'';position:absolute;width:92px;height:92px;border-radius:50%;background:rgba(244,226,221,.55);left:-35px;bottom:-35px}
+.journal-highlight-grid article{background:#fffdf9!important;box-shadow:0 13px 36px rgba(69,54,46,.06)}
+.journal-photo-wrap{position:relative;height:270px;overflow:hidden}
+.journal-photo-wrap img{width:100%;height:100%;object-fit:cover}
+.photo-number{position:absolute;left:13px;top:13px;width:42px;height:42px;border-radius:50%;background:rgba(255,253,249,.92);display:grid;place-items:center;color:#a36d72;font-weight:700}
+.journal-gallery img{box-shadow:0 14px 36px rgba(60,49,43,.10)}
+.journal-cta{background:#455d58!important;position:relative;overflow:hidden}
+.journal-cta:after{content:'';position:absolute;width:180px;height:180px;border-radius:50%;background:rgba(242,220,211,.12);left:-50px;top:-70px}
+
+@media(max-width:1020px){
+  .destination-journal-grid{grid-template-columns:1fr;gap:30px;direction:rtl}
+  .destination-journal-copy{grid-column:1;grid-row:1;text-align:center}
+  .destination-journal-copy p{margin-inline:auto}
+  .destination-collage{grid-column:1;grid-row:2;width:min(100%,620px);margin-inline:auto}
+  .destination-summary-grid{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .eyebrow{font-size:12px!important;min-height:29px!important;padding:6px 10px!important}
+  .section-head h2{font-size:34px!important}.section-head p{font-size:14px!important}
+  .category-icon-grid .brand-icon-card img{width:125px!important;height:125px!important}.category-icon-grid .brand-icon-card strong{font-size:19px!important}.category-icon-grid .brand-icon-card span{font-size:11px!important}
+  .site-footer{padding-top:42px!important}.footer-brand{min-height:auto!important;justify-content:center!important}.footer-logo{width:265px!important}.footer-bottom{font-size:12px!important;text-align:center!important}
+  .destination-journal-hero{padding-top:34px}.journal-kicker{font-size:19px}.destination-journal-copy h1{font-size:58px}.destination-journal-copy h2{font-size:20px}.destination-journal-copy p{font-size:14px;line-height:1.85}
+  .destination-collage{height:410px}.collage-main{left:3%;top:8%;width:78%;height:73%}.collage-one{width:135px;height:160px;right:1%}.collage-two{width:125px;height:150px;right:3%;bottom:4%}
+  .destination-booking-links{grid-template-columns:1fr 1fr}.destination-fact-panel{grid-template-columns:1fr}.destination-fact-panel h3{grid-column:auto}
+}
