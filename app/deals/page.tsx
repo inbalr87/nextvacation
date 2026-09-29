@@ -5,11 +5,11 @@ import {ArrowUpRight,ShieldCheck} from 'lucide-react';
 export const metadata={title:'דילים'};
 
 const categories=[
-  {title:'דקה 90',text:'יעדים שכדאי לבדוק כשאפשר להיות גמישים בתאריכים.',image:'/assets/categories/last-minute.svg',href:'/discover/last-minute'},
-  {title:'חופשה אורבנית',text:'כיוונים לסופ״ש עירוני קצר.',image:'/assets/categories/city.svg',href:'/discover/city'},
-  {title:'שופינג',text:'ערים שבהן הקניות הן חלק מהחופשה.',image:'/assets/categories/shopping.svg',href:'/discover/shopping'},
-  {title:'צפון אמריקה',text:'רעיונות לחופשות גדולות יותר.',image:'/assets/categories/north-america.svg',href:'/discover/north-america'},
-  {title:'חופים ואיים',text:'ים, שמש וחופשה רגועה.',image:'/assets/categories/beaches.svg',href:'/discover/beaches'},
+  {title:'דקה 90',text:'יעדים שכדאי לבדוק כשאפשר להיות גמישים בתאריכים.',image:'/assets/categories/last-minute.png',href:'/discover/last-minute'},
+  {title:'חופשה אורבנית',text:'כיוונים לסופ״ש עירוני קצר.',image:'/assets/categories/city.png',href:'/discover/city'},
+  {title:'שופינג',text:'ערים שבהן הקניות הן חלק מהחופשה.',image:'/assets/categories/shopping.png',href:'/discover/shopping'},
+  {title:'צפון אמריקה',text:'רעיונות לחופשות גדולות יותר.',image:'/assets/categories/north-america.png',href:'/discover/north-america'},
+  {title:'חופים ואיים',text:'ים, שמש וחופשה רגועה.',image:'/assets/categories/beaches.png',href:'/discover/beaches'},
 ];
 
 export default function Page(){return <main>

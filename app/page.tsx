@@ -3,14 +3,14 @@ import {HomeSearch} from '@/components/HomeSearch';
 import {Search,ArrowUpRight,ShieldCheck} from 'lucide-react';
 
 const categories=[
-  {title:'חופשה אורבנית',subtitle:'ערים, תרבות, אוכל וסופי שבוע',image:'/assets/categories/city.svg',href:'/discover/city'},
-  {title:'שופינג',subtitle:'יעדים עם רחובות קניות, שווקים ומציאות',image:'/assets/categories/shopping.svg',href:'/discover/shopping'},
-  {title:'דקה 90',subtitle:'רעיונות ליעדים כשאפשר להיות גמישים בתאריכים',image:'/assets/categories/last-minute.svg',href:'/discover/last-minute'},
-  {title:'צפון אמריקה',subtitle:'ניו יורק, אורלנדו, לוס אנג׳לס ועוד',image:'/assets/categories/north-america.svg',href:'/discover/north-america'},
-  {title:'חופים ואיים',subtitle:'ים, שמש וקצב רגוע',image:'/assets/categories/beaches.svg',href:'/discover/beaches'},
-  {title:'אוכל וקולינריה',subtitle:'שווקים, מסעדות וטעמים מקומיים',image:'/assets/categories/food.svg',href:'/discover/food'},
-  {title:'חופשה משפחתית',subtitle:'יעדים עם הרבה אפשרויות גם עם ילדים',image:'/assets/categories/family.svg',href:'/discover/family'},
-  {title:'חיי לילה',subtitle:'ברים, מוזיקה ואווירה עד מאוחר',image:'/assets/categories/nightlife.svg',href:'/discover/nightlife'},
+  {title:'חופשה אורבנית',subtitle:'ערים, תרבות, אוכל וסופי שבוע',image:'/assets/categories/city.png',href:'/discover/city'},
+  {title:'שופינג',subtitle:'יעדים עם רחובות קניות, שווקים ומציאות',image:'/assets/categories/shopping.png',href:'/discover/shopping'},
+  {title:'דקה 90',subtitle:'רעיונות ליעדים כשאפשר להיות גמישים בתאריכים',image:'/assets/categories/last-minute.png',href:'/discover/last-minute'},
+  {title:'צפון אמריקה',subtitle:'ניו יורק, אורלנדו, לוס אנג׳לס ועוד',image:'/assets/categories/north-america.png',href:'/discover/north-america'},
+  {title:'חופים ואיים',subtitle:'ים, שמש וקצב רגוע',image:'/assets/categories/beaches.png',href:'/discover/beaches'},
+  {title:'אוכל וקולינריה',subtitle:'שווקים, מסעדות וטעמים מקומיים',image:'/assets/categories/food.png',href:'/discover/food'},
+  {title:'חופשה משפחתית',subtitle:'יעדים עם הרבה אפשרויות גם עם ילדים',image:'/assets/categories/family.png',href:'/discover/family'},
+  {title:'חיי לילה',subtitle:'ברים, מוזיקה ואווירה עד מאוחר',image:'/assets/categories/nightlife.png',href:'/discover/nightlife'},
 ];
 
 const inspiration=[
